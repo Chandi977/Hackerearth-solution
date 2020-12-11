@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    char word[1000];
+    int length_of_word,sum=0;
+    scanf("%s", &word);
+    length_of_word=strlen(word);
+    while(length_of_word--)
+    {
+        sum += ((char) word[length_of_word]-96);
+    }
+    printf("%d", sum);
+    return 0;
+}
