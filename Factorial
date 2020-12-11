@@ -1,0 +1,12 @@
+#include<stdio.h>
+main()
+{
+	int num,i,fact=1;
+	scanf("%d",&num);
+	for(i=1; i<=num; i++)//to go through all numbe4s
+	{
+		fact=fact*i;
+	}
+	printf("%d",fact);
+	return 0;
+}
