@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    long int output;
+    int num,elm[num],i;
+    scanf("%d", &num);//input the num of elements
+    for(i=0; i<num; i++)
+    {
+        scanf("%d", &elm[i]);//input elements
+    }
+    output=1;//to neglact any garbage values
+    for(i=0; i<num; i++)
+    {
+        output = (output*elm[i]) % (1000000007);
+    }
+    printf("%ld", output);
+    return 0;
+}
