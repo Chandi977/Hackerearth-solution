@@ -1,0 +1,30 @@
+#include<stdio.h>
+main()
+{
+    int q1,q2,purple,green,nques,k,l,price1=0,price2=0,test;
+    scanf("%d",&test);//no of test
+    for(k=0; k<test; k++)
+    {
+    
+        scanf("%d %d",&green,&purple);//input no. green and purple baloons
+        scanf("%d",&nques);//input no.of questions
+    
+        for(l=0; l<nques; l++)
+            {
+             scanf("%d %d",&q1,&q2);
+             price1=price1+((q1*green)+(q2*purple));//to check the price of first operation
+             price2=price2+((q1*purple)+(q2*green));//to check the price of second operation
+            }
+        if (price1<price2)
+            {
+             printf("%d\n",price1);
+            }
+        else
+            {
+              printf("%d\n",price2);
+            }
+        price1=0;
+        price2=0;
+    }
+    return 0;
+}
