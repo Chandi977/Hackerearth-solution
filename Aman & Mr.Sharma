@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    //cout << "Hello,World!\n";
+    long int test,count=0;
+    cin>>test;
+    long int r,x;
+    for(int i=0; i<test; i++)
+    {
+        cin>>r>>x;
+        if(2*((22.0/7)*r)<(x*100))
+            count++;
+    }
+    cout<<count;
+    return 0;
+}
